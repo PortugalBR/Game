@@ -25,6 +25,7 @@ def jogar():
         else:
             erros += 1
             desenha_forca(erros)
+            
 
         enforcou = erros == 7
         acertou = "_" not in letras_acertadas
@@ -42,55 +43,54 @@ def desenha_forca(erros):
     print(" |/      |    ")
 
     if(erros == 1):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |            ")
         print (" |            ")
         print (" |            ")
 
     if(erros == 2):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |      \     ")
         print (" |            ")
         print (" |            ")
 
     if(erros == 3):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |      \|    ")
         print (" |            ")
         print (" |            ")
 
     if(erros == 4):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |      \|/   ")
         print (" |            ")
         print (" |            ")
 
     if(erros == 5):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |      \|/   ")
         print (" |       |    ")
         print (" |            ")
 
     if(erros == 6):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |      \|/   ")
         print (" |       |    ")
         print (" |      /     ")
 
     if (erros == 7):
-        print (" |      (_)   ")
+        print (" |       O    ")
         print (" |      \|/   ")
         print (" |       |    ")
         print (" |      / \   ")
 
-    print(" |            ")
-    print("_|___         ")
+    print(" |              ")
+    print("_|_____         ")
     print()
 
 
-
 def imprime_mensagem_vencedor():
-    print("Herzlichen Glückwunsch, Sie haben gewonnen!")
+    print("Congrats, You Win !")
     print("       ___________      ")
     print("      '._==_==_=_.'     ")
     print("      .-\:      /-.    ")
@@ -102,7 +102,7 @@ def imprime_mensagem_vencedor():
     print("         _.' '._        ")
     print("        '-------'       ")
 
-    saida = input("\n Tippen Sie auf {}ENTER{}, um erneut auszuwählen...".format('\033[4;33m', '\033[m'))
+    saida = input("\n Tap {}ENTER{} ,for a new game...".format('\033[4;33m', '\033[m'))
 
 
 def imprime_mensagem_perdedor(palavra_secreta):
@@ -125,7 +125,7 @@ def imprime_mensagem_perdedor(palavra_secreta):
     print("     \_         _/         ")
     print("       \_______/           ")
 
-    saida = input("\nDigite {}ENTER{} para Escolher de novo...".format('\033[4;33m', '\033[m'))
+    saida = input("\n Tap {}ENTER{} for a new game...".format('\033[4;33m', '\033[m'))
 
     print('*******************************')
     print('****** Chose a language *******')

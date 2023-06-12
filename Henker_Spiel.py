@@ -90,7 +90,7 @@ def desenha_forca(erros):
 
 
 def imprime_mensagem_vencedor():
-    print("Congrats, You Win !")
+    print("Herzlichen Glückwunsch, Sie haben gewonnen!")
     print("       ___________      ")
     print("      '._==_==_=_.'     ")
     print("      .-\:      /-.    ")
