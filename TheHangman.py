@@ -125,7 +125,7 @@ def imprime_mensagem_perdedor(palavra_secreta):
     print("     \_         _/         ")
     print("       \_______/           ")
 
-    saida = input("\n Tap {}ENTER{} for a new game...".format('\033[4;33m', '\033[m'))
+    saida = input("\n Tap {}ENTER{} for a new game ! ".format('\033[4;33m', '\033[m'))
 
     print('*******************************')
     print('****** Chose a language *******')

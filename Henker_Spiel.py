@@ -136,7 +136,8 @@ def imprime_mensagem_perdedor(palavra_secreta):
     print("3. Spanisch")
     print("4. Deutsch")
     print("5. Beenden")
-
+    print('')
+    print('**************************************')
 
 def marca_chute_correto(chute, letras_acertadas, palavra_secreta):
     index = 0
